@@ -43,6 +43,16 @@
         padding: 50px;
         overflow: hidden;
       }
+      @media (max-width: 768px) {
+        body {
+          padding: 30px;
+        }
+      }
+      @media (max-width: 420px) {
+        body {
+          padding: 10px;
+        }
+      }
       .wrapper {
         display: -webkit-box;
         display: -webkit-flex;
@@ -79,8 +89,13 @@
         background-repeat: no-repeat;
         background-position: right bottom;
         background-size: contain;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: flex-start;
       }
-      @media (max-width: 768px) {
+      @media (max-width: 1750px) {
         .container {
           width: 100%;
           min-width: 290px;
@@ -91,28 +106,65 @@
         box-sizing: border-box;
         padding: 55px 34px;
       }
+      .container > .separator {
+        width: 1px;
+        padding: 1px;
+        height: 60%;
+        background-color: #cfcfd8;
+        margin: 20px 20px;
+      }
       @media (max-width: 420px) {
+        .container {
+          flex-direction: column;
+          align-items: center;
+        }
         .container > div {
           padding: 40px 24.7px !important;
         }
+        .container > .separator {
+          padding: 1px !important;
+        }
       }
-      .name {
+
+      .left-column {
+        flex: 0.382;
+        margin-right: 20px;
+      }
+      .nickname {
         font-family: "Satisfy", cursive;
-        font-size: 1em;
+        font-size: 2em;
         color: #000;
         text-align: center;
-        margin: 0;
-        padding: 0;
+        margin-bottom: 10px;
       }
       .swith_emo::before {
+        font-size: 1.5;
         font-family: sans-serif;
         content: "\\(o_X)/";
       }
       .swith_emo:hover::before {
+        font-size: 1.5;
         font-family: sans-serif;
         content: "\\(X_o)/";
       }
+
+      .right-column {
+        flex: 0.618;
+        max-width: 20px;
+      }
+      @media (max-width: 420) {
+        .left-column {
+          flex-basis: 100%;
+        }
+        .separator {
+          display: none;
+        }
+        .right-column {
+          flex-basis: 100%;
+        }
+      }
       .social {
+        width: 100%;
         padding-top: 20px;
         text-align: center;
       }
@@ -121,12 +173,12 @@
         color: #7c8891;
       }
       .footer {
-        color: #BBBBBB;
+        color: #bbbbbb;
         padding: 20px 0;
         /* opacity: 0; */
       }
       .footer a {
-        color: #BBBBBB;
+        color: #bbbbbb;
         text-decoration: none;
       }
       .text-center {
@@ -153,27 +205,31 @@
   <body>
     <div class="wrapper">
       <div class="container">
-        <div>
-          <h1>S Kobalt</h1>
-          <p class="swith_emo"></p>
+        <div class="left-column">
+          <div class="nickname">SKobalt</div>
+          <div class="signature">
+            <p class="swith_emo"></p>
+          </div>
         </div>
+        <div class="separator"></div>
+        <div class="right-column">test test</div>
 
         <div class="social">
-        <a
-          href="https://github.com/pisceskkk"
-          class="btn btn-link"
-          style="color: black"
-          target="_blank"
-          ><i class="fa fa-github fa-fw"></i
-        ></a>
+          <a
+            href="https://github.com/pisceskkk"
+            class="btn btn-link"
+            style="color: black"
+            target="_blank"
+            ><i class="fa fa-github fa-fw"></i
+          ></a>
 
-        <a
-          href="mailto:me@skobalt.cn"
-          class="btn btn-link"
-          style="color: black"
-          target="_blank"
-          ><i class="fa fa-envelope fa-fw"></i
-        ></a>
+          <a
+            href="mailto:me@skobalt.cn"
+            class="btn btn-link"
+            style="color: black"
+            target="_blank"
+            ><i class="fa fa-envelope fa-fw"></i
+          ></a>
         </div>
       </div>
       <div class="footer text-center">
