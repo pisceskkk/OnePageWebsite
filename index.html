@@ -1,137 +1,193 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="title" content="SKobalt 主页| 个人知识记录">
-<title lang="en|zh">SKobalt 主页| 个人知识记录</title>
-<meta name="description" content="">
-<meta name="keywords" content="">
-<meta name="robots" content="index, follow">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<meta name="revisit-after" content="1 days">
-<meta name="author" content="SKobalt">   
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="shortcut icon" href="/images/logo.png" />
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
-<style>
-body {
-    font-family: 'Satisfy';
-    background-color: #F0F0F8;
-    background-image: url("/images/bkgd.png");
-    background-repeat: no-repeat;
-    background-position: right bottom;
-    background-size:contain;
-}
-.swith_emo::before {
-    content: "\\(o_X)/";
-}
-
-.swith_emo:hover::before {
-    content: "\\(X_o)/";
-}
-</style> 
-<script type="text/javascript" src="/js/gtag.js"></script>
-
-</head>
-    
-<body>
-    
-<h1><center> S Kobalt </center></h1>
-    <center>
-        <iframe src="/images/teaser.png" width="400" height="200" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-    </center>
-<h3 style="font-family:sans-serif;"><center>
-<p class="swith_emo"></p>
-</center></h3>
-    
-<center>
-  
-<!-- <a href="https://twitter.com/@ismailtsdln" class="btn btn-link" style="color:black" target="_blank"><i class="fa fa-twitter fa-fw"></i></a> -->
-
-<a href="https://github.com/pisceskkk" class="btn btn-link" style="color:black" target="_blank"><i class="fa fa-github fa-fw"></i></a>
-
-<a href="https://t.me/SKobalt" class="btn btn-link" style="color:black" target="_blank"><i class="fa fa-telegram fa-fw"></i></a>
-
-<a href="mailto:me@skobalt.cn" class="btn btn-link" style="color:black" target="_blank"><i class="fa fa-envelope fa-fw"></i></a>
-    
-<SCRIPT LANGUAGE="Javascript">
-var isNS = (navigator.appName == "Netscape") ? 1 : 0;
-var EnableRightClick = 0;
-if(isNS)
-document.captureEvents(Event.MOUSEDOWN||Event.MOUSEUP);
-function mischandler(){
-if(EnableRightClick==1){ return true; }
-else {return false; }
-}
-function mousehandler(e){
-if(EnableRightClick==1){ return true; }
-var myevent = (isNS) ? e : event;
-var eventbutton = (isNS) ? myevent.which : myevent.button;
-if((eventbutton==2)||(eventbutton==3)) return false;
-}
-function keyhandler(e) {
-var myevent = (isNS) ? e : window.event;
-if (myevent.keyCode==96)
-EnableRightClick = 1;
-return;
-}
-document.oncontextmenu = mischandler;
-document.onkeypress = keyhandler;
-document.onmousedown = mousehandler;
-document.onmouseup = mousehandler;
-</script>
-    
-<script language="JavaScript">
-    document.onkeypress = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
+  <head>
+    <meta name="title" content="SKobalt | 个人知识记录" />
+    <title lang="en|zh">SKobalt | 个人知识记录</title>
+    <meta name="keywords" content="" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="revisit-after" content="1 days" />
+    <meta name="author" content="SKobalt" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <link rel="shortcut icon" href="images/logo.png" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Satisfy"
+    />
+    <style>
+      html {
+        line-height: 1.15;
+        -webkit-text-size-adjust: 100%;
+      }
+      body,
+      html {
+        height: 100%;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        color: #cfcfd8;
+        font: 16px/22px -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI",
+          Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei",
+          "Helvetica Neue", sans-serif;
+        background-color: #dfdfe8;
+        padding: 50px;
+        overflow: hidden;
+      }
+      .wrapper {
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        height: 100%;
+      }
+      .container {
+        position: relative;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 40%;
+        background: #fcfcfc;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        overflow: hidden;
+        max-width: 700px;
+        -webkit-box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+        background-image: url("images/bkgd.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+        background-size: contain;
+      }
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          min-width: 290px;
         }
-    }
-    document.onmousedown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
+      }
+      .container > div {
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        padding: 55px 34px;
+      }
+      @media (max-width: 420px) {
+        .container > div {
+          padding: 40px 24.7px !important;
         }
-    }
-document.onkeydown = function (event) {
-        event = (event || window.event);
-        if (event.keyCode == 123) {
-            return false;
-        }
-    }
-</script>
-    
-<body oncontextmenu="return false" onselectstart="return false" ondragstart="return false"></body>
+      }
+      .name {
+        font-family: "Satisfy", cursive;
+        font-size: 1em;
+        color: #000;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+      }
+      .swith_emo::before {
+        font-family: sans-serif;
+        content: "\\(o_X)/";
+      }
+      .swith_emo:hover::before {
+        font-family: sans-serif;
+        content: "\\(X_o)/";
+      }
+      .social {
+        padding-top: 20px;
+        text-align: center;
+      }
+      .social a {
+        margin: 3px 3px;
+        color: #7c8891;
+      }
+      .footer {
+        color: #BBBBBB;
+        padding: 20px 0;
+        /* opacity: 0; */
+      }
+      .footer a {
+        color: #BBBBBB;
+        text-decoration: none;
+      }
+      .text-center {
+        text-align: center;
+      }
+    </style>
+    <script type="text/javascript" src="js/gtag.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=411537956"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<script type="text/javascript">
-    var omitformtags=["input", "textarea", "select"]
-    omitformtags=omitformtags.join("|")
-    function disableselect(e){
-        if (omitformtags.indexOf(e.target.tagName.toLowerCase())==-1)
-            return false
-        }
- 
-        function reEnable(){
-            return true
-        }
- 
-        if (typeof document.onselectstart!="undefined")
-            document.onselectstart=new Function ("return false")
-                else{
-                    document.onmousedown=disableselect
-                    document.onmouseup=reEnable
-                } 
-</script>
-    
-<body onkeydown="return false">
-</center>
-<div class="footer text-center fadeIn">
-<center>
-<a href="http://beian.miit.gov.cn" target="_black">鲁ICP备2022035654号-1</a>
-</center>
-</div>
-</center> 
-</body>
+      gtag("config", "MEASUREMENT_ID");
+    </script>
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div>
+          <h1>S Kobalt</h1>
+          <p class="swith_emo"></p>
+        </div>
+
+        <div class="social">
+        <a
+          href="https://github.com/pisceskkk"
+          class="btn btn-link"
+          style="color: black"
+          target="_blank"
+          ><i class="fa fa-github fa-fw"></i
+        ></a>
+
+        <a
+          href="mailto:me@skobalt.cn"
+          class="btn btn-link"
+          style="color: black"
+          target="_blank"
+          ><i class="fa fa-envelope fa-fw"></i
+        ></a>
+        </div>
+      </div>
+      <div class="footer text-center">
+        <div>
+          &copy; 2022-2023
+          <a href="https://www.skobalt.cn"><strong>SKobalt</strong></a
+          >. All Rights Reserved.
+        </div>
+        <div>
+          <a href="http://beian.miit.gov.cn" target="_blank"
+            >鲁ICP备2022035654号-1</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
